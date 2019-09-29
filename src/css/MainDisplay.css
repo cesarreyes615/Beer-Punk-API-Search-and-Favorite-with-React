@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.beer-container{
+    width: 100vw;
+}
+
+.beer-grid{
+    margin: 5em 5em 5em 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(300px, 400px);
+}
+
+h2{
+    text-align: center;
+}
+
+#search-beers{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+img {
+    max-width: 60%;
+    display: block;
+    height: 60%;
+  }
+
+ .beer-item{
+     color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid gray;
+ }
+
+ .beer-item button{
+     border: none;
+ }
+
+ p{
+     font-size: 80%;
+ }
+
+ .beer-item-description{
+     margin-left: 15px;
+ }
+
+ nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: rgb(143, 188, 143);
+     color: white;
+ }
+
+ .nav-links{
+     width: 10%;
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .nav-links li{
+     color: white;
+     margin-right: 15px;
+ }
+
+ .beer-image{
+     margin-left: 10px;
+ }
+
+ input[type=text]{
+    min-width: 60vw;
+    height: 30px;
+}
+
+input[type=submit]{
+    min-width: 5vw;
+    height: 36px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.favorite-button-area{
+    display: grid;
+}
+
+.favorite-button{
+    z-index: 1;
+    height: 20px;
+    width: 18px;
+    opacity: 0;
+}
+
+.favorite-button, .favorite-button-icon{
+    grid-column: 1;
+    grid-row: 1;
+}
